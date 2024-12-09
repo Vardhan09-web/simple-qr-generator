@@ -25,8 +25,7 @@ A simple web-based application to generate QR codes from text or URLs. This proj
 ## Preview
 
 ### User Interface:
-![QR Code Generator Screenshot](assets/screenshot.png)  
-*(Replace with an actual screenshot of your project)*
+![QR Code Generator Screenshot](assest/screenshot.png)  
 
 ---
 
