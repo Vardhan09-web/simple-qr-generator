@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #353535;
+}
+
+.container {
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container p {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.container input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333;
+    background: #f9f9f9;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.container input:focus {
+    border-color: #1a73e8;
+    background: #fff;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container input::placeholder {
+    color: #aaa;
+    font-family: sans-serif;
+}
+
+.container button {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(145deg, #494eea, #6a7dfc);
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px rgba(175, 171, 171, 0.619);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.container button:hover {
+    background: linear-gradient(145deg, #3c3ed1, #535df8);
+    box-shadow: 0 12px 20px rgba(175, 171, 171, 0.8);
+}
+
+#imgBox {
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease, border-color 0.3s;
+}
+
+#imgBox img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#imgBox.show-img {
+    max-height: 300px;
+    margin: 10px auto;
+    border: 2px solid #d1d1d1;
+}
+
+.error {
+    animation: shake 0.1s linear 10;
+    border-color: #ff4d4d !important;
+    background: #ffe6e6 !important;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-3px);
+    }
+    50% {
+        transform: translateX(3px);
+    }
+    75% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
